@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/cssindex.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    {%for c in course %}
+    <div class="container">
+        <div class="card-title">{{c.course_title}}</div>
+        <table>
+            <p>Description: {{c.course_description}}</p>
+            <p>Credits: {{c.credits}}</p>
+            <p>Instructor: {{c.instructor}}</p>
+            <p>Start Date: {{c.start_date}}</p>
+    </div>
+    <a class="btn btn-primary" href="{% url 'index'%}">Go Back</a>
+    {%endfor%}
+</body>
+</html>

@@ -1,0 +1,53 @@
+h1{
+    color:#121830;
+}
+h2{
+    color:rgb(112, 201, 159);
+}
+
+.card{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+body{
+    background-image: url('../images/FeelCopped.jpg')
+}
+.c{
+    font-size: xx-large;
+    border-top-width: 2px;
+    border-top-color: lightgray;
+    border-top-style: dashed;
+}
+
+.container{
+    /* border: 2px, dotted, lightgrey; */
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+
+
+.card-title{
+    font-size: xx-large;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.project{
+    margin: 20px;
+    border-style: solid;
+    border-color: brown;
+    border-width: 2px;
+    padding:10px;
+    border-radius: 20px;
+    background-color: darkslategrey;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/cssindex.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="project">
+        <div class="card-title">
+            <h1>Welcome to Alex's Final Project</h1>
+            <h2>Here is the list of courses</h2>
+        </div>
+        <div>
+        {%if course%}
+            {% for c in course%}
+            <div class="card">
+                <h3>
+                    {{c.course_title}}
+                </h3>
+                <div class="c">
+                    {{c.course_description}}<br>
+                    <a class="btn btn-primary" href="{% url 'course_detail' c.pk %}">Read More</a>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+        {% endif %}
+</div>
+</body>
+</html>
